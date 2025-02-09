@@ -14,8 +14,8 @@ public class Library {
 	
 	public static void main(String[] args) {
 		Library LibraryManagement = new Library();
-		String bookTitle = null;
-		LibraryManagement.addBook(bookTitle);
+		String bookTitle = LibraryManagement.addBook("bookTitle");
+		System.out.println(bookTitle);
 		LibraryManagement.issueBook();
 		
 	}
