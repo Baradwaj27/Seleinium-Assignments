@@ -11,13 +11,4 @@ public class Library {
 	{
 		System.out.println("Book issued successfully");
 	}
-	
-	public static void main(String[] args) {
-		Library LibraryManagement = new Library();
-		String bookTitle = LibraryManagement.addBook("bookTitle");
-		System.out.println(bookTitle);
-		LibraryManagement.issueBook();
-		
-	}
-
 }
