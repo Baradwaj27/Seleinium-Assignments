@@ -50,7 +50,6 @@ public class Ajio {
 			System.out.print(brandNames+",");	
 		}
 		
-		System.out.println("-----------------------------------");
 		
 		//Get the list of names of the bags and print it
 		List<WebElement> bags = driver.findElements(By.xpath("//div[@class='nameCls']"));
