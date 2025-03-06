@@ -83,8 +83,8 @@ public class ActionsBigBasket {
 			System.out.println("Item not added to your cart");
 		}
 		
-		 WebElement usernamefield = driver.findElement(By.xpath("//body[@class='relative']"));
-		 File source = usernamefield.getScreenshotAs(OutputType.FILE);
+		 WebElement carts = driver.findElement(By.xpath("//body[@class='relative']"));
+		 File source = carts.getScreenshotAs(OutputType.FILE);
 		 File destination=new File("./Snaps/bigbasket.png");
 		 FileUtils.copyFile(source, destination);
 			        		 
