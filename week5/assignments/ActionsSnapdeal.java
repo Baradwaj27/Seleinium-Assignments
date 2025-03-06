@@ -106,8 +106,8 @@ public class ActionsSnapdeal {
 		System.out.println("Discount of the item : "+discount);
 		
 		//14. Take a snapshot of the shoes.
-		 WebElement usernamefield = driver.findElement(By.xpath("//div[@class='sidebaroverlay']"));
-		 File source = usernamefield.getScreenshotAs(OutputType.FILE);
+		 WebElement shoes = driver.findElement(By.xpath("//div[@class='sidebaroverlay']"));
+		 File source = shoes.getScreenshotAs(OutputType.FILE);
 		 File destination=new File("./Snaps/snapdeal.png");
 		 FileUtils.copyFile(source, destination);
 		 
