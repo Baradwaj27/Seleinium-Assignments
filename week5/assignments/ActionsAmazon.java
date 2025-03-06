@@ -56,8 +56,8 @@ public class ActionsAmazon {
 		Thread.sleep(3000);
 		
 		//6. Take a screenshot of the product displayed.
-		WebElement usernamefield = driver.findElement(By.xpath("//body[contains(@class,'a-aui_')]"));
-		File source = usernamefield.getScreenshotAs(OutputType.FILE);
+		WebElement product = driver.findElement(By.xpath("//body[contains(@class,'a-aui_')]"));
+		File source = product.getScreenshotAs(OutputType.FILE);
 		File destination=new File("./Snaps/amazonproduct.png");
 		FileUtils.copyFile(source, destination);
 		
